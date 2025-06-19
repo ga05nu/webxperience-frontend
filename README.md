@@ -3,7 +3,6 @@
 A modern web experience demo featuring:
 
 - Animated loader
-- Light/Dark mode toggle
 - Responsive design
 - Animated sections (AOS)
 - FontAwesome icons
@@ -21,9 +20,6 @@ A modern web experience demo featuring:
 
 ## Features
 
-- **Theme Toggle:**
-  - Click the moon/sun button in the top right to switch between light and dark mode.
-  - The selected theme is saved in your browser (localStorage).
 - **Animated Loader:**
   - Displays on page load with a countdown and split animation.
 - **Responsive Layout:**
@@ -47,7 +43,3 @@ A modern web experience demo featuring:
 - Edit `styles.css` for theme colors and layout.
 - Edit `main.js` for loader, theme logic, and section animations.
 - Edit `index.html` for content and structure.
-
----
-
-© 2024 WebXperience. All rights reserved.
