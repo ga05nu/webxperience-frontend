@@ -29,14 +29,6 @@ A modern web experience demo featuring:
 - **FontAwesome:**
   - Used for icons throughout the site.
 
-## Troubleshooting
-
-- **Theme toggle not working?**
-  - Make sure you are serving the site with a local server, not opening the HTML file directly.
-  - Check the browser console for errors.
-  - Ensure only one `<script src="main.js" defer></script>` is present at the end of `index.html`.
-  - If you manually set `data-theme` in the console and it works, the CSS is correct and the issue is with JavaScript event attachment.
-  - Try refreshing the page after clearing your browser cache.
 
 ## Customization
 
