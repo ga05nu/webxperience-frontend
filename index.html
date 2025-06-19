@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-split-container">
+            <div class="loader-half loader-half-left"></div>
+            <div class="loader-half loader-half-right"></div>
+            <div class="loader-logo">WebXperience</div>
+        </div>
+        <div class="loader-countdown" id="loader-countdown">3</div>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay"></div>
+    <div class="popup-modal" id="popup-modal">
+        <button class="close-popup" aria-label="Close popup">&times;</button>
+        <div class="popup-content">
+            <h3>More Information</h3>
+            <p>This is a demo popup! You can put any content here, such as more details about a feature or a project.</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">WebXperience</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#testimonials" class="nav-link">What Clients Say</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <video autoplay loop muted playsinline>
+                <source src="homepage.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to the Future</h1>
+            <p>Experience the next generation of web design</p>
+            <div class="hero-cta">
+                <button class="cta-button cta-primary ripple-effect">Get Started</button>
+                <button class="cta-button cta-secondary ripple-effect">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section" data-aos="fade-up">
+        <div class="features-container">
+            <h2 class="section-title" data-aos="fade-right">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast Performance</h3>
+                        <p>Lightning-quick load times and smooth animations for optimal user experience</p>
+                        <div class="feature-details">
+                            <ul class="feature-list">
+                                <li>Optimized code delivery</li>
+                                <li>Smart caching strategies</li>
+                                <li>Compressed resources</li>
+                            </ul>
+                            <a href="#" class="learn-more popup-trigger" data-popup-content="<h3>Fast Performance</h3><p>Lightning-quick load times and smooth animations for optimal user experience.</p>">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Responsive Design</h3>
+                        <p>Perfect display and functionality across all devices and screen sizes</p>
+                        <div class="feature-details">
+                            <ul class="feature-list">
+                                <li>Mobile-first approach</li>
+                                <li>Adaptive layouts</li>
+                                <li>Touch-friendly interface</li>
+                            </ul>
+                            <a href="#" class="learn-more">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Modern UI</h3>
+                        <p>Contemporary and sleek interface with attention to detail and aesthetics</p>
+                        <div class="feature-details">
+                            <ul class="feature-list">
+                                <li>Clean typography</li>
+                                <li>Smooth animations</li>
+                                <li>Intuitive navigation</li>
+                            </ul>
+                            <a href="#" class="learn-more">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Security First</h3>
+                        <p>Advanced security measures to protect your data and privacy</p>
+                        <div class="feature-details">
+                            <ul class="feature-list">
+                                <li>SSL encryption</li>
+                                <li>Regular updates</li>
+                                <li>Secure authentication</li>
+                            </ul>
+                            <a href="#" class="learn-more">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Easy Integration</h3>
+                        <p>Seamless integration with your existing systems and workflows</p>
+                        <div class="feature-details">
+                            <ul class="feature-list">
+                                <li>API support</li>
+                                <li>Custom webhooks</li>
+                                <li>Developer tools</li>
+                            </ul>
+                            <a href="#" class="learn-more">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock support to help you with any questions or issues</p>
+                        <div class="feature-details">
+                            <ul class="feature-list">
+                                <li>Live chat support</li>
+                                <li>Knowledge base</li>
+                                <li>Video tutorials</li>
+                            </ul>
+                            <a href="#" class="learn-more">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section parallax-section" data-aos="fade-up">
+        <div class="parallax-shapes">
+            <div class="parallax-shape shape-circle scroll-speed-1" style="top: 10%; left: 5%;"></div>
+            <div class="parallax-shape shape-square scroll-speed-2" style="top: 60%; right: 10%;"></div>
+            <div class="parallax-shape shape-dots scroll-speed-3" style="top: 30%; right: 20%;"></div>
+        </div>
+        <div class="container parallax-content">
+            <h2 class="section-title" data-aos="fade-right">Our Services</h2>
+            <p class="section-intro fade-up" data-aos="fade-up">Discover our range of professional services designed to help your business thrive in the digital world. From web design to app development and digital marketing, we deliver solutions tailored to your needs.</p>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in">
+                    <div class="service-content">
+                        <span class="service-tag">Web Design</span>
+                        <h3>Web Design</h3>
+                        <p>Create stunning, responsive websites that captivate your audience</p>
+                        <a href="#" class="learn-more">Learn More <span class="arrow">→</span></a>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-content">
+                        <span class="service-tag">App Development</span>
+                        <h3>App Development</h3>
+                        <p>Build powerful mobile applications for iOS and Android platforms</p>
+                        <a href="#" class="learn-more">Learn More <span class="arrow">→</span></a>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-content">
+                        <span class="service-tag">Digital Marketing</span>
+                        <h3>Digital Marketing</h3>
+                        <p>Drive growth through strategic digital marketing campaigns</p>
+                        <a href="#" class="learn-more">Learn More <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-navigation">
+                <button class="nav-button prev" aria-label="Previous service">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="nav-button next" aria-label="Next service">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="work" class="work-section parallax-section" data-aos="fade-up">
+        <div class="parallax-shapes">
+            <div class="parallax-shape shape-circle scroll-speed-2" style="bottom: 20%; right: 5%;"></div>
+            <div class="parallax-shape shape-square scroll-speed-1" style="top: 40%; left: 15%;"></div>
+            <div class="parallax-shape shape-dots scroll-speed-3" style="top: 10%; left: 30%;"></div>
+        </div>
+        <div class="container parallax-content">
+            <h2 class="section-title" data-aos="fade-right">Our Work</h2>
+            <p class="section-intro fade-up" data-aos="fade-up">Take a look at some of our recent projects that showcase our expertise in web design, app development, and digital marketing. We take pride in delivering high-quality solutions for our clients.</p>
+            <div class="stats-grid">
+                <div class="stat-card popup-trigger" data-aos="zoom-in" data-popup-content="<h3>1500+ Projects</h3><p>We have completed over 1500 projects for our clients.</p>">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 3H3V10H10V3Z" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                            <path d="M21 3H14V10H21V3Z" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                            <path d="M21 14H14V21H21V14Z" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                            <path d="M10 14H3V21H10V14Z" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">1500+</h3>
+                        <p class="stat-label">Project Complete</p>
+                    </div>
+                </div>
+                <div class="stat-card popup-trigger" data-aos="zoom-in" data-aos-delay="100" data-popup-content="<h3>850+ Happy Clients</h3><p>Our clients love our work and keep coming back!</p>">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">850+</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="stat-card popup-trigger" data-aos="zoom-in" data-aos-delay="200" data-popup-content="<h3>120+ Awards Won</h3><p>We are recognized for our excellence in the industry.</p>">
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                            <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88" fill="rgba(108, 92, 231, 0.2)" stroke="#6c5ce7" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">120+</h3>
+                        <p class="stat-label">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Clients Say Section -->
+    <section id="testimonials" class="testimonials-section parallax-section" data-aos="fade-up">
+        <div class="parallax-shapes">
+            <div class="parallax-shape shape-circle scroll-speed-3" style="top: 15%; right: 10%;"></div>
+            <div class="parallax-shape shape-square scroll-speed-1" style="bottom: 30%; left: 5%;"></div>
+            <div class="parallax-shape shape-dots scroll-speed-2" style="top: 50%; right: 25%;"></div>
+        </div>
+        <div class="container parallax-content">
+            <h2 class="section-title" data-aos="fade-right">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card" data-aos="zoom-in">
+                    <div class="testimonial-content">
+                        <p>"Working with WebXperience has been an absolute pleasure. Their team delivered beyond our expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>John Smith</h4>
+                                <p>CEO, Tech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-navigation">
+                <button class="nav-button prev" aria-label="Previous testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="nav-button next" aria-label="Next testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>WebXperience</h3>
+                <p>Creating amazing web experiences</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@webxperience.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="ripple-effect"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="ripple-effect"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="ripple-effect"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="ripple-effect"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 WebXperience. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js" defer></script>
+</body>
+</html> 
